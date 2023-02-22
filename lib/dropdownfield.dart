@@ -116,7 +116,7 @@ class DropDownField extends FormField<String> {
                   children: <Widget>[
                     Expanded(
                       child: TextFormField(
-                        autovalidate: true,
+                        autovalidateMode: AutovalidateMode.always,                        
                         controller: state._effectiveController,
                         decoration: effectiveDecoration.copyWith(
                             errorText: field.errorText),
